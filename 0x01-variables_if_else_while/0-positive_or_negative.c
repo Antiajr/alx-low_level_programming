@@ -6,7 +6,7 @@
 /* betty style doc for function main goes there */
 /**
  *
- *main - it prints if number is positive or is zero or is negative
+ *main - main function to generate a random number
  *
  *  
  *
@@ -25,13 +25,13 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n",n);
+	}
 	else if (n < 0)
 	{
-		printf("%d is negative\n",n);
-	}
-	else
-	{
-		printf("%d is zero\n", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
