@@ -7,17 +7,18 @@
 
 void more_numbers(void)
 {
-	int i, j;
+	int a, b = 0;
+	char num[] = "01234567891011121314";
 
-	for (i = 0; i < 10; i++)
+	while (b < 10)
 	{
-		for (j = 0; j < 15; j++)
+		for (a = 0; a <= 19; a++)
 		{
-			if (j >= 10)
-				_putchar(j / 10 + '0');
-			_putchar(j % 10 + '0');
-		}	
-		_putchar('\n');
+			_putchar(num[a]);
+		}
+
+		_putchar(10);
+		b++;
 	}
 }
 
