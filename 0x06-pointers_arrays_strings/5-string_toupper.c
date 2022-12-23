@@ -7,21 +7,16 @@
  * Return: uppercase string
  */
 
-char *string_toupper(char *word)
+char *string_toupper(char *s)
 {
-	int length;
+	int i = 0;
 
-	length = 0;
-
-	while (word[length] != '\0')
+	while (s[i] != '\0')
 	{
-		if (word[length] >= 97 && word[length] <= 122)
-		{
-			word[length] = word[length] - 32;
-		}
-
-		length++;
+		if (s[i] >= 97 && s[i] <= 122)
+			s[i] = s[i] - 32;
+		i++;
 	}
 
-	return (word);
+	return (s);
 }
