@@ -17,7 +17,8 @@ char *leet(char *s)
 		for (j = 0; j < 10; j +=2)
 		{
 			if ((s[i] == options[j] || s[i] == (options[j] + 32)))
-					s[i] = options[j + 1];
+				
+				s[i] = options[j + 1];
 		}
 	}
 
